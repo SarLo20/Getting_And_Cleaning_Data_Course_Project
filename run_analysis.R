@@ -1,4 +1,4 @@
-# script can be run as long as the Samsung data is in the working directory
+# prerequisite: the Samsung data is in the working directory
 
 
 

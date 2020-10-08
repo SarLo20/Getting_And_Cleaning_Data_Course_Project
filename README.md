@@ -1,20 +1,19 @@
 Information for Getting_And_Cleaning_Data_Course_Project
 
-this file describes the data set and the steps that were performed to make it 
-"tidy"
-the variables of the tidy data set are described in the file CodeBook.md
+this file describes the data set and the steps that were performed to make it "tidy" <br />
+the variables of the tidy data set are described in the file CodeBook.md <br />
 
-all evaluations are based on the following data
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-in addition to the data there are documents that describe the variables 
+all evaluations are based on the following data <br />
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip <br />
+in addition to the data there are documents that describe the variables <br />
 
-1st Step: download the data
+1st Step: download the data <br />
 
-2nd Step: load all data into R 
+2nd Step: load all data into R <br />
   - use script "load_data.R"
   - make sure to choose the correct working directory
 
-3rd Step: make the data "tidy"
+3rd Step: make the data "tidy" <br />
   - use script "run_analysis.R"
   - the following steps are performed:
    1. prepare data: 
@@ -29,14 +28,13 @@ in addition to the data there are documents that describe the variables
        group by ID and activity -> calculate mean for each measurement
        descriptive column names are added afterwards
    4. export data
-       the tidy data set is stored to the file "tidyData.txt"
-the result is a text file with the tidy data: 
+       the tidy data set is stored to the file "tidyData.txt" <br />
+       
+the result is a text file with the tidy data: <br />
 each subject is described by ID (1:30) and for each subject there are 6 possible
-activities -> 30\*6 = 180 rows 
+activities -> 30\*6 = 180 rows <br />
+each column corresponds to one measurement (66 in total) <br />
 
-each column corresponds to one measurement (66 in total) 
-
-How to view the data afterwards
-
-tidyData <- read.table("tidyData.txt", header = TRUE) 
+How to view the data afterwards: <br />
+tidyData <- read.table("tidyData.txt", header = TRUE) <br />
 View(tidyData)

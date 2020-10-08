@@ -33,8 +33,10 @@ in addition to the data there are documents that describe the variables
 the result is a text file with the tidy data: 
 each subject is described by ID (1:30) and for each subject there are 6 possible
 activities -> 30\*6 = 180 rows 
+
 each column corresponds to one measurement (66 in total) 
 
 How to view the data afterwards
+
 tidyData <- read.table("tidyData.txt", header = TRUE) 
 View(tidyData)

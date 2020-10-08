@@ -10,31 +10,31 @@ in addition to the data there are documents that describe the variables <br />
 1st Step: download the data <br />
 
 2nd Step: load all data into R <br />
-  - use script "load_data.R"
-  - make sure to choose the correct working directory
+  - use script "load_data.R" <br />
+  - make sure to choose the correct working directory <br />
 
 3rd Step: make the data "tidy" <br />
-  - use script "run_analysis.R"
-  - the following steps are performed:
-   1. prepare data: 
-       add descriptive names to the individual data frames
-       select only measurements on the mean and standard deviation 
-       (assumption: only measurements with the strings "mean()" and "std()" are considered)
-   2. combine data 
-       bind columns with subject information (="ID"), activity and measurements
-       for test and training individually
-       then bind rows of the two data frames -> all data is now in one data frame
-   3. calculate average values of each variable for each activity and each subject
-       group by ID and activity -> calculate mean for each measurement
-       descriptive column names are added afterwards
-   4. export data
+  - use script "run_analysis.R" <br />
+  - the following steps are performed: <br />
+   1. prepare data <br />
+       add descriptive names to the individual data frames <br />
+       select only measurements on the mean and standard deviation <br />
+       (assumption: only measurements with the strings "mean()" and "std()" are considered) <br />
+   2. combine data <br />
+       bind columns with subject information (="ID"), activity and measurements <br />
+       for test and training individually <br />
+       then bind rows of the two data frames -> all data is now in one data frame <br />
+   3. calculate average values of each variable for each activity and each subject <br />
+       group by ID and activity -> calculate mean for each measurement <br />
+       descriptive column names are added afterwards <br />
+   4. export data <br />
        the tidy data set is stored to the file "tidyData.txt" <br />
        
 the result is a text file with the tidy data: <br />
-each subject is described by ID (1:30) and for each subject there are 6 possible
+each subject is described by ID (1:30) and for each subject there are 6 possible <br />
 activities -> 30\*6 = 180 rows <br />
 each column corresponds to one measurement (66 in total) <br />
 
 How to view the data afterwards: <br />
 tidyData <- read.table("tidyData.txt", header = TRUE) <br />
-View(tidyData)
+View(tidyData) <br />
